@@ -36,7 +36,6 @@ function BarChart() {
             const data = res.data as SaleSucess[];
             const myLabes = data.map((x) => x.sellerName);
             const mySeries = data.map((x) => round(100 * x.deals / x.visited,1));
-            console.log(res.data)
             setChartData({
                 labels: {
                     categories: myLabes
